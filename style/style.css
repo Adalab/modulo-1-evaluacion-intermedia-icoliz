@@ -12,6 +12,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  background-color: var(--main-color);
 }
 
 .header {
@@ -24,7 +25,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  display: none; /* Quitar luego */
 }
 
 .menu {
@@ -46,12 +46,31 @@ body {
   color: var(--menu-color);
 }
 
-.title {
-  width: 100%;
+.main {
   height: 100vh;
-  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 200px;
   color: #ffffff;
-  text-align: center;
   font-size: 30px;
+  text-align: center;
   text-transform: capitalize;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .logo {
+    margin: 20px 10px;
+  }
+  .list-item {
+    padding: 10px;
+  }
 }
