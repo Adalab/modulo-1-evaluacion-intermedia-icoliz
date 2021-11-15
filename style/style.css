@@ -36,10 +36,12 @@ body {
 
 .list-item {
   display: inline-block;
-  padding: 0px 10px 13px 10px;
+  flex-direction: row;
 }
 
 .link {
+  display: inline-block;
+  padding: 0px 10px 13px 10px;
   text-decoration: none;
   color: var(--menu-color);
 }
